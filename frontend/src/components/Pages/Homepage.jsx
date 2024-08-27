@@ -7,7 +7,7 @@ import Navbar from "../utilities/Navbar.jsx";
 
 export default function Homepage() {
   
-      window.scrollTo(0,0);
+      window.scrollTo(0,0); // to be scrolled to top onload
 
   return (
     <div className="homepage">

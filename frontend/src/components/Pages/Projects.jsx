@@ -7,7 +7,7 @@ import Navbar from "../utilities/Navbar";
 export default function Projects() {
 
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0,0); // to be scrolled to top onload
 }, [])
 
   const handleMouseMove = (event) => {

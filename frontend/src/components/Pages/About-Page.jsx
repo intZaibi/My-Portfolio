@@ -8,7 +8,7 @@ import Navbar from "../utilities/Navbar";
 
 export default function Aboutpage() {
 
-    window.scrollTo(0,0);
+    window.scrollTo(0,0); // to be scrolled to top onload
 
   return (
     <div className="aboutPage">

@@ -13,17 +13,17 @@ export default function Content() {
     const translateX = ((x / rect.width) - 0.5) * 7; //here 0.5 is to maintain balance between both ends width otherwise it will translate to one side.
     const translateY = ((y / rect.height) - 0.5) * 10; //and 7 and 10 are for pixel adjustment that how much it should be translated
 
-    card.style.setProperty('--translateX', `${translateX}px`);
+    card.style.setProperty('--translateX', `${translateX}px`); //card translation effect on hover
     card.style.setProperty('--translateY', `${translateY}px`);
 
     const lightX = (x / rect.width) * 100; // same case here
     const lightY = (y / rect.height) * 100;
 
-    card.style.setProperty('--lightX', `${lightX}%`);
+    card.style.setProperty('--lightX', `${lightX}%`); //card light effect on hover
     card.style.setProperty('--lightY', `${lightY}%`);
   };
 
-  const handleMouseLeave = (event) => {
+  const handleMouseLeave = (event) => {     // to reset the translations and lights
     const card = event.currentTarget;
     card.style.setProperty('--translateX', `0`);
     card.style.setProperty('--translateY', `0`);
@@ -32,7 +32,7 @@ export default function Content() {
   };
   
   useEffect(() => {
-    document.querySelectorAll('.card-wrapper').forEach(card => {
+    document.querySelectorAll('.card-wrapper').forEach(card => {      // To set light position of card on load
       card.style.setProperty('--lightX', `50%`);
       card.style.setProperty('--lightY', `50%`);
     });
@@ -64,7 +64,7 @@ export default function Content() {
 
         <div className="card-wrapper card5" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
         <div className="card-content">
-            <Link className="card-title-big true" to="/">Book a call
+            <Link className="card-title-big true" to="/Contactpage">Book a call
             <div className="circle-60-arrow">
               <div className="icon-embed-custom">
                 <svg viewBox="0 0 29 30" fill="none">

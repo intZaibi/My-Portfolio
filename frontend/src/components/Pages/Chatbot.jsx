@@ -3,14 +3,13 @@ import pic from "../../images/profile-pic.jpg";
 import UserMsg from '../utilities/userMsg'
 import axios from "axios";
 
-export const Chatbot = ( {isChatbotVisible, setIsChatbotVisible } ) => {
+export const Chatbot = ( { setIsChatbotVisible } ) => {
 
   const [email, setEmail] = useState("");
   const [gotEmail, setGotEmail] = useState(false);
   const returnTime = "6:00 PM";
 
   function getTime(){
-    
     const time = new Date().toLocaleTimeString('en-US', {
       hour: '2-digit',
       minute: '2-digit',
@@ -23,7 +22,7 @@ export const Chatbot = ( {isChatbotVisible, setIsChatbotVisible } ) => {
   const prevMessages = () => {
     if(localStorage.getItem('messages') === null) {
       return (
-        [{ sender: 'agent-message', currentTime: getTime(), text: "Got any questions? I'm happy to help." }]
+        [{ sender: 'agent-message', currentTime: getTime(), text: "Got any questions? I'm happy to help." }]  // in case user is new or never chat then this message will be the sent as first message
       )
     } else {
       const data = JSON.parse(localStorage.getItem('messages'))
@@ -32,13 +31,11 @@ export const Chatbot = ( {isChatbotVisible, setIsChatbotVisible } ) => {
     
   }
   
-  const [messages, setMessages] = useState(
-    prevMessages()
-  );
+  const [messages, setMessages] = useState( prevMessages() );
 
   useEffect(() => {
     const chatbody = document.querySelector(".chat-body");
-    chatbody.scrollTop = chatbody.scrollHeight;
+    chatbody.scrollTop = chatbody.scrollHeight; // to be scrolled to the bottom of all messages onload
 
     localStorage.setItem('messages', JSON.stringify(messages));
     axios.post('http://localhost:4000/chatbot', {
@@ -56,7 +53,7 @@ export const Chatbot = ( {isChatbotVisible, setIsChatbotVisible } ) => {
     
     const emailbtn = document.querySelector(".msg-btn")
     const submitbtn = document.querySelector(".chat-footer-btn")
-    emailbtn.disabled = true
+    emailbtn.disabled = true 
     submitbtn.disabled = true
     if(localStorage.getItem('Email') !== null){
       setGotEmail(true)
