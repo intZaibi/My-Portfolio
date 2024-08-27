@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import pic from "../../images/profile-pic.jpg";
+import pic from "../../assets/images/profile-pic.jpg";
 import UserMsg from '../utilities/userMsg'
 import axios from "axios";
 

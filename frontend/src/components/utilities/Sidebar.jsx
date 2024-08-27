@@ -1,5 +1,5 @@
 import React from "react";
-import profile_pic from '../../images/profile-pic.jpg'
+import profile_pic from '../../assets/images/profile-pic.jpg'
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMugHot } from '@fortawesome/free-solid-svg-icons'
