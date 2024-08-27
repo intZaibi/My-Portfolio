@@ -50,7 +50,7 @@ export default function Content() {
         
         <div className="card-wrapper card2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
         <div className="card-content">
-            <h2 className="card-title-big">10000+</h2>
+            <h2 className="card-title-big">10k+</h2>
             <h2 className="card-title-small">Line of Code</h2>
           </div>
         </div>

@@ -7,32 +7,32 @@ export default function Footer() {
       <footer className="footer">
         <div className="footer_menu">
           <Link
-            to="/AllProjects"
+            to=""
             className="footer-link link"
           >
             <div className="footer-menu-item-wrapper">
               <div className="footer-menu-text">
-                Projects
+                Reviews
               </div>
             </div>
           </Link>
           <Link
-            to="/resources"
+            to="https://github.com/intZaibi/"
             className="footer-link link"
           >
             <div className="footer-menu-item-wrapper">
               <div className="footer-menu-text">
-                Resources
+                Github
               </div>
             </div>
           </Link>
           <Link
-            to="/Contactpage"
+            to="https://www.linkedin.com/in/shahzaib-ali-3b16802aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             className="footer-link link"
           >
             <div className="footer-menu-item-wrapper">
               <div className="footer-menu-text">
-                Contact
+                LinkedIn
               </div>
             </div>
           </Link>
