@@ -18,7 +18,7 @@ export default function Project1(props) {
             </div>
             <div className="projects-card-title">Featured Projects</div>
           </div>
-          <Link className="circle-60-arrow" to="/">
+          <Link className="circle-60-arrow" to="/AllProjects">
             <div className="icon-embed-custom">
               <svg viewBox="0 0 29 30" fill="none">
                 <path

@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Content from "../utilities/Content.jsx";
 import Sidebar from '../utilities/Sidebar.jsx';
 import Footer from "../utilities/footer.jsx";
 import Navbar from "../utilities/Navbar.jsx";
+import CV from '../../assets/Muhammad-Shahzaib-Ali-Resume.pdf'
 
 export default function Homepage() {
   
@@ -21,9 +21,9 @@ export default function Homepage() {
             <h1>Hi, I'm Shahzaib Ali</h1>
             <p>Full stack web developer based in Pakistan.</p>
           </div>
-          <Link className="cv-link" to="/">
+          <a className="cv-link" href={CV} download="Muhammad-Shahzaib-Ali-Resume">
             Download CV &gt;
-          </Link>
+          </a>
         </div>
       </div>
       
