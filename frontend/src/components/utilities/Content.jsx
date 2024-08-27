@@ -43,21 +43,21 @@ export default function Content() {
       <div className="small-grid">
         <div className="card-wrapper card1" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
           <div className="card-content">
-            <h2 className="card-title-big">100+</h2>
+            <h2 className="card-title-big">10+</h2>
             <h2 className="card-title-small">Projects done</h2>
           </div>
         </div>
         
         <div className="card-wrapper card2" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
         <div className="card-content">
-            <h2 className="card-title-big">500+</h2>
-            <h2 className="card-title-small">Cups of Coffee</h2>
+            <h2 className="card-title-big">7000+</h2>
+            <h2 className="card-title-small">Line of Code</h2>
           </div>
         </div>
 
         <div className="card-wrapper card4" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
           <div className="card-content">
-            <h2 className="card-title-big">10+</h2>
+            <h2 className="card-title-big">1.5+</h2>
             <h2 className="card-title-small">Years Experience</h2>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function Content() {
       <div className="card-wrapper card3" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
         <div className="card-content">
           <h2 className="card-title-big">About me</h2>
-          <h2 className="card-title-small">Hey there! I'm Shahzaib Ali, a motivated full stack developer with over 1 year of experience in creating websites and applications. Skilled in JS, React, NextJS, Express, NodeJS, MySQL.<br /> I focus on delivering high-quality user experiences and staying updated with industry trends. <br /> <hr />
+          <h2 className="card-title-small">Hey there! I'm Shahzaib Ali, a motivated full stack developer with over 1.5 year of experience in creating websites and applications. Skilled in JS, React, NextJS, Express, NodeJS, MySQL.<br /> I focus on delivering high-quality user experiences and staying updated with industry trends. <br /> <hr />
           Let’s collaborate to bring innovative digital solutions to life!</h2>
         </div>
       </div>
