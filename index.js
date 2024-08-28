@@ -34,7 +34,7 @@ app.post('/chatbot', (req, res) => {
 console.log(req.body, "\n", req.body.email, "\n", messages)
   if(req.body.email){
   db.query(
-    'INSERT INTO messagesData (chatEmail, chatMessage) VALUES (?, ?) ON DUPLICATE KEY UPDATE messages = ?', 
+    'INSERT INTO messagesData (chatEmail, chatMessage) VALUES (?, ?) ON DUPLICATE KEY UPDATE chatMessage = ?', 
     [req.body.email, messages, messages]
     )
     .then(() => {
