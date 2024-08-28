@@ -40,7 +40,7 @@ export default function ContactForm( { isChatbotVisible } ) {
     form.innerHTML = 
       `<p class="thanks-response">Thank you! we've got your message! we'll get back to you soon! &#128077;</p>`
     
-    axios.post('jdbc:mysql://sql12.freesqldatabase.com:3306/sql12728250', {
+    axios.post('https://my-portfolio-backend-vyn8.onrender.com/contact', {
       name: name,
       email: email,
       message: message
