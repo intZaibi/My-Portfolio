@@ -27,7 +27,7 @@ app.get('/', async (req, res) => {
 
 
 app.post('/chatbot', (req, res) => {
-    
+
   const messages = req.body.messages.map((msg)=>{
       return " " + msg.text.trim()
     }).toString()
@@ -49,6 +49,7 @@ app.post('/chatbot', (req, res) => {
     console.log("No email.Not uploaded")
     res.status(200)
   }
+
 })
 
 
