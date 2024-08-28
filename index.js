@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 
 
 app.get('/', async (req, res) => {
-  await db.query("select * from contactForm")
+  await db.query("select * from messagesData")
   .then((data) => {
     res.send(data)
   })
