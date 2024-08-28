@@ -27,7 +27,7 @@ app.get('/', async (req, res) => {
 
 
 app.post('/chatbot', (req, res) => {
-
+    
   const messages = req.body.messages.map((msg)=>{
       return " " + msg.text.trim()
     }).toString()
@@ -49,7 +49,7 @@ app.post('/chatbot', (req, res) => {
     console.log("No email.Not uploaded")
     res.status(200)
   }
-
+res.send("This is chatbot page)
 })
 
 
@@ -68,6 +68,7 @@ app.post('/contact', (req, res) => {
     res.status(500).send('Error uploading', error)
     console.log('Error uploading data',error)
   })
+    res.send("This is contact page)
 })
 
 
