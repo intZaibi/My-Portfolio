@@ -49,7 +49,6 @@ app.post('/chatbot', (req, res) => {
     console.log("No email.Not uploaded")
     res.status(200)
   }
-res.render("This is chatbot page")
 })
 
 
@@ -68,7 +67,6 @@ app.post('/contact', (req, res) => {
     res.status(500).send('Error uploading', error)
     console.log('Error uploading data',error)
   })
-    res.render("This is contact page")
 })
 
 
