@@ -11,7 +11,7 @@ Functionalities that are used:
 
 
 Note: This doesn't includes node modules and other dependencies. It just includes development files.
-      To run this project, download the zip file, extract it and open the backend folder with VScode or any code editor you use for web dev.
+      To run this project, download the zip file (please download the zip file of both branches), extract it and open the backend folder with VScode or any code editor you use for web dev.
       Now open terminal and run the following commands:
 
       npm i
