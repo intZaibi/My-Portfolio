@@ -19,6 +19,7 @@ export default function Footer() {
           <Link
             to="https://github.com/intZaibi/"
             className="footer-link link"
+            target="_blank"
           >
             <div className="footer-menu-item-wrapper">
               <div className="footer-menu-text">
@@ -29,6 +30,7 @@ export default function Footer() {
           <Link
             to="https://www.linkedin.com/in/shahzaib-ali-3b16802aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             className="footer-link link"
+            target="_blank"
           >
             <div className="footer-menu-item-wrapper">
               <div className="footer-menu-text">

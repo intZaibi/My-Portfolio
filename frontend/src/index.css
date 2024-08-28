@@ -413,6 +413,21 @@ html, body{
 
 /*------------Project Page------------ */
 
+.noProjects{
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f4f4f4;
+  font-size: 2vw;
+  padding: 40px 0;
+}
+
+.noProjects a{
+  text-decoration: none;
+}
+
 .projectpage-card-container{
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -1576,6 +1591,10 @@ opacity: 0;
 }
 
 /*---------- Projectpage---------- */
+
+.noProjects{
+  font-size: 2vh;
+}
   
   .projects-page-heading{
     font-size: 6vh;

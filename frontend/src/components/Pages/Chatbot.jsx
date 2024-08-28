@@ -202,7 +202,7 @@ export const Chatbot = ( { setIsChatbotVisible } ) => {
           <img src={pic} alt="Agent" className="agent-avatar" />
           <div className="agent-details">
             <span className="agent-name">Shahzaib Ali</span>
-            <span className="return-time">We'll return {returnTime}</span>
+            <span className="return-time">We'll get back to you soon</span>
           </div>
         </div>
       </div>

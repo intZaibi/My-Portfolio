@@ -53,6 +53,10 @@ export default function Projects() {
           <h2 className="projects-page-heading">All Projects</h2>
         </div>
 
+        <div className="noProjects disable">
+          <p>No project available here yet! <br /> Please visit my <a href="https://github.com/intZaibi/" target="_blank">Github</a> account! </p>
+        </div>
+
         <div className="card-container projectpage-card-container">
           <div
             className="card-wrapper project-page-card"
@@ -63,7 +67,8 @@ export default function Projects() {
               className="card-content"
               style={{ padding: "2rem 2rem 1.5rem" }}
             >
-              <Project2 Project="Project 1" anime="true" />
+              <Project2 anime="true" />
+              {/* <Project2 Project="Project 1" anime="true" /> */}
             </div>
           </div>
 
