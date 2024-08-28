@@ -38,7 +38,7 @@ export const Chatbot = ( { setIsChatbotVisible } ) => {
     chatbody.scrollTop = chatbody.scrollHeight; // to be scrolled to the bottom of all messages onload
 
     localStorage.setItem('messages', JSON.stringify(messages));
-    axios.post('http://localhost:4000/chatbot', {
+    axios.post('https://my-portfolio-backend-vyn8.onrender.com/chatbot', {
       email: email,
       messages: messages
     })
