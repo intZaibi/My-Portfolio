@@ -31,7 +31,7 @@ app.post('/chatbot', (req, res) => {
   const messages = req.body.messages.map((msg)=>{
       return " " + msg.text.trim()
     }).toString()
-
+console.log(req.body, "\n", req.body.email, "\n", messages)
   if(req.body.email){
   db.query(
     'INSERT INTO messagesData (chatEmail, chatMessage) VALUES (?, ?) ON DUPLICATE KEY UPDATE messages = ?', 
