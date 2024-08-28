@@ -167,7 +167,7 @@ export const Chatbot = ( { setIsChatbotVisible } ) => {
     
     if (emailInput !== "" && email === "") {
       
-      setEmail(emailInput);
+      setEmail(`${emailInput}`);
       document.querySelector(".bot").innerHTML = `...`
 
       document.getElementById("messageField").disabled = false 
