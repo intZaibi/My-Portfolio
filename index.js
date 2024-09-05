@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 
 
 app.get('/', async (req, res) => {
-  await db.query("select * from messagesData")
+  await db.query("select * from form")
   .then((data) => {
     res.send(data)
   })
@@ -34,7 +34,7 @@ app.post('/chatbot', (req, res) => {
 console.log(req.body, "\n", req.body.email, "\n", messages)
   if(req.body.email){
   db.query(
-    'INSERT INTO messagesData (chatEmail, chatMessage) VALUES (?, ?) ON DUPLICATE KEY UPDATE chatMessage = ?', 
+    'INSERT INTO chatbot (email, messages) VALUES (?, ?) ON DUPLICATE KEY UPDATE messages = ?', 
     [req.body.email, messages, messages]
     )
     .then(() => {
@@ -56,16 +56,16 @@ console.log(req.body, "\n", req.body.email, "\n", messages)
 app.post('/contact', (req, res) => {
   console.log(req.body)
   db.query(    
-    `insert into messagesData(formName, formEmail, formMessage) 
+    `insert into form(name, email, messages) 
     values ('${req.body.name}', '${req.body.email}', '${req.body.message}') 
-    ON DUPLICATE KEY UPDATE formMessage = CONCAT(IFNULL(formMessage, ''), '\n', '${req.body.message}')`
+    ON DUPLICATE KEY UPDATE messages = CONCAT(IFNULL(messages, ''), '\n', '${req.body.message}')`
   )
   .then(() => {
     console.log("uploaded")
-    res.send('uploaded successfully').status(200)
+    res.status(200)
   })
   .catch((error) => {
-    res.status(500).send('Error uploading', error)
+    res.status(500)
     console.log('Error uploading data',error)
   })
 })
@@ -73,7 +73,7 @@ app.post('/contact', (req, res) => {
 
 
 
-db.query("select * from messagesData")
+db.query("select * from form")
     .then(() => {
     console.log("db connected!!! \n");
     app.listen(process.env.port || 4000, () => console.log("server connected!!!"));
