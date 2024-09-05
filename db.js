@@ -1,8 +1,12 @@
 import mysql from 'mysql2/promise.js'
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 export default mysql.createPool({
-    host: 'sql12.freesqldatabase.com',
-    user: 'sql12728250',
-    password: '',
-    database: 'sql12728250',
-    port: '3306'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
+    port: process.env.DB_PORT
 })
