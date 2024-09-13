@@ -24,6 +24,6 @@ Note: This doesn't includes node modules and other dependencies. It just include
       (wait.... Bingo! this is my portfolio)
 
       
-I'll deploy it very soon 😇.
+Deployed Link: https://shahzaib-ali-portfolio.netlify.app/
 
 
