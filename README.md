@@ -1,14 +1,10 @@
 # My-Portfolio
 
-This is a fullstack portfolio project. It includes following technologies:
+This is a MERN developer portfolio project. It includes following technologies:
 1. HTML CSS JS
 2. React (library/framework for frontend)
 3. NodeJS Express (for backend)
 4. MySQL (Database)
-
-Functionalities that are used:
-(...)
-
 
 Note: This doesn't includes node modules and other dependencies. It just includes development files.
       To run this project, download the zip file (please download the zip file of both branches), extract it and open the backend folder with VScode or any code editor you use for web dev.
