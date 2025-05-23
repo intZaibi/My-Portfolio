@@ -28,7 +28,7 @@ export default function Footer() {
             </div>
           </Link>
           <Link
-            to="https://www.linkedin.com/in/shahzaib-ali-3b16802aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            to="https://www.linkedin.com/in/shahzaib-ali-zaibi"
             className="footer-link link"
             target="_blank"
           >
@@ -40,7 +40,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className="footer-rights">
-          <div>All right reserved | intZaibi © 2024</div>
+          <div>All right reserved | intZaibi © 2025</div>
         </div>
       </footer>
   )

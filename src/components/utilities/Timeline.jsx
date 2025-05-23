@@ -36,12 +36,23 @@ export default function Timeline() {
                     </div>
 
                     <div className="timeline-card-container">
+                        <span className="tail"></span>
+                        <span className="dot"></span>
+                        <div className="timeline-card left">
+                        <div className="timeline-card-content">
+                            <h3>Sept,2024-ongoing</h3>
+                            <h4>BS Computer Science From GC No.1 DIK</h4>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="timeline-card-container">
                         <span className="dot last-dot"></span>
                         <span className="dot last-dot anime"></span>
-                        <div className="timeline-card  left">
+                        <div className="timeline-card right">
                         <div className="timeline-card-content">
                             <h3>2024-ongoing</h3>
-                            <h4>BS Computer Science From GC No.1 DIK</h4>
+                            <h4>Founder & CEO ZaibiTech</h4>
                         </div>
                         </div>
                     </div>

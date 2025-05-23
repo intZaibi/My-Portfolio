@@ -67,8 +67,8 @@ export default function Projects() {
               className="card-content"
               style={{ padding: "2rem 2rem 1.5rem" }}
             >
-              <Project2 anime="true" />
-              {/* <Project2 Project="Project 1" anime="true" /> */}
+              {/* <Project2 anime="true" /> */}
+              <Project2 Project="Ecommerce-Website" image={"/project-ecommerce.png"} link="https://ecommerce-eight-mocha.vercel.app/" anime="true" />
             </div>
           </div>
 
@@ -81,7 +81,7 @@ export default function Projects() {
               className="card-content"
               style={{ padding: "2rem 2rem 1.5rem" }}
             >
-              <Project2 anime="true"/>
+              <Project2 Project="Noon Quran" tags={["WordPress", "Next.JS", "PayPal", "Strip", "Nodemailer"]} image={"/NoonQuran.png"} link="https://noonquran.com/" anime="true"/>
             </div>
           </div>
 
@@ -94,7 +94,7 @@ export default function Projects() {
               className="card-content"
               style={{ padding: "2rem 2rem 1.5rem" }}
             >
-              <Project2 anime="true"/>
+              <Project2 Project="TourMate" tags={["Next.js", "Open AI", "Wikimedia", "Material UI"]} image={"/TourMate.png"} link="https://tour-mate-bay.vercel.app/" anime="true"/>
             </div>
           </div>
 
@@ -107,7 +107,20 @@ export default function Projects() {
               className="card-content"
               style={{ padding: "2rem 2rem 1.5rem" }}
             >
-              <Project2 anime="true"/>
+              <Project2 Project="Sim Owner Details" tags={["Wordpress", "GoogleMap", "Spexo Theme", "Lottieflies"]} image={"/BloggingWordpress1.png"} link="https://cyan-goat-812431.hostingersite.com/" anime="true"/>
+            </div>
+          </div>
+
+          <div
+            className="card-wrapper project-page-card"
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div
+              className="card-content"
+              style={{ padding: "2rem 2rem 1.5rem" }}
+            >
+              <Project2 Project="Attendance Portal With Qr-Code" tags={["Next.js", "QR-Scanner", "WebSocket", "MERN Stack"]} image={"/AttendancePortal.png"} anime="true"/>
             </div>
           </div>
 

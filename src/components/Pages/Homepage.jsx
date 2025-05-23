@@ -3,7 +3,7 @@ import Content from "../utilities/Content.jsx";
 import Sidebar from '../utilities/Sidebar.jsx';
 import Footer from "../utilities/footer.jsx";
 import Navbar from "../utilities/Navbar.jsx";
-import CV from '../../assets/Muhammad-Shahzaib-Ali-Resume.pdf'
+import CV from '../../assets/MUHAMMAD_SHAHZAIB_ALI_RESUME.pdf'
 
 export default function Homepage() {
   
