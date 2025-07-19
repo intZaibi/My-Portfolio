@@ -84,7 +84,7 @@ export default function Content() {
       <div className="card-wrapper card3" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
         <div className="card-content">
           <h2 className="card-title-big">About me</h2>
-          <h2 className="card-title-small">Hey there! I'm Shahzaib Ali, a motivated full stack developer with over 2 year of practice creating websites and applications. Skilled in JS, React, NextJS, Express, NodeJS, MySQL and MongoDB.
+          <h2 className="card-title-small">Hey there! I'm Shahzaib Ali, a motivated full stack developer with over 2+ years of practice creating websites and applications. Skilled in JS, React, NextJS, Express, NodeJS, MySQL and MongoDB.
 I focus on delivering high-quality user experiences and staying updated with industry trends.<br /> <hr />
           Let’s collaborate to bring innovative digital solutions to life!</h2>
         </div>

@@ -3,7 +3,7 @@ import Content from "../utilities/Content.jsx";
 import Sidebar from '../utilities/Sidebar.jsx';
 import Footer from "../utilities/footer.jsx";
 import Navbar from "../utilities/Navbar.jsx";
-import CV from '../../assets/MUHAMMAD_SHAHZAIB_ALI_RESUME.pdf'
+import CV from '../../assets/MUHAMMAD SHAHZAIB ALI MERN STACK DEVELOPER RESUME.pdf'
 
 export default function Homepage() {
   
@@ -21,7 +21,7 @@ export default function Homepage() {
             <h1>Hi, I'm Shahzaib Ali</h1>
             <p>Full stack web developer based in Pakistan.</p>
           </div>
-          <a className="cv-link" href={CV} download="Muhammad-Shahzaib-Ali-Resume">
+          <a className="cv-link" href={CV} download="MUHAMMAD SHAHZAIB ALI MERN STACK DEVELOPER RESUME.pdf">
             Download CV &gt;
           </a>
         </div>

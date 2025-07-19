@@ -18,7 +18,7 @@ export default function Timeline() {
                         <span className="dot"></span>
                         <div className="timeline-card  left">
                         <div className="timeline-card-content">
-                            <h3>Aug,2023</h3>
+                            <h3>Aug,2022</h3>
                             <h4>FSc from Govt. College No.1 Dikhan</h4>
                         </div>
                         </div>
@@ -29,7 +29,7 @@ export default function Timeline() {
                         <span className="dot"></span>
                         <div className="timeline-card right">
                         <div className="timeline-card-content">
-                            <h3>June,2024</h3>
+                            <h3>June,2023</h3>
                             <h4>Diploma of IT from GCT Dikhan</h4>
                         </div>
                         </div>
@@ -40,7 +40,7 @@ export default function Timeline() {
                         <span className="dot"></span>
                         <div className="timeline-card left">
                         <div className="timeline-card-content">
-                            <h3>Sept,2024-ongoing</h3>
+                            <h3>Sept,2023-ongoing</h3>
                             <h4>BS Computer Science From GC No.1 DIK</h4>
                         </div>
                         </div>
