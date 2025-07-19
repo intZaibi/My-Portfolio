@@ -758,6 +758,33 @@ opacity: 0;
 .tech-icon5 svg{
   color: rgb(74 222 128);
 }
+.tech-icon6 svg{
+  color: rgb(0, 229, 255);
+}
+.tech-icon7 svg{
+  color: rgb(203 213 225);
+}
+.tech-icon8 svg{
+  color: rgb(0, 229, 255);
+}
+.tech-icon9 svg{
+  color: rgba(238, 129, 52, 0.667);
+}
+.tech-icon10 svg{
+  color: #5CCBFF;
+}
+.tech-icon11 svg{
+  color: #e84d31;
+}
+.tech-icon12 svg{
+  color: #764abc;
+}
+.tech-icon13 svg{
+  color: #E535AB;
+}
+.tech-icon14 svg{
+  color: #0091E2;
+}
 
 .tech-icon:hover{
   transform: scale(1.2)
@@ -794,7 +821,30 @@ opacity: 0;
 .tech-icon6:hover{
   background-color: #5CCBFF;
 }
-
+.tech-icon7:hover{
+  background-color: rgb(100 116 139 );
+}
+.tech-icon8:hover{
+  background-color: #06b5d4c3;
+}
+.tech-icon9:hover{
+  background-color: rgba(238, 129, 52, 0.667);
+}
+.tech-icon10:hover{
+  background-color: #5CCBFF;
+}
+.tech-icon11:hover{
+  background-color: #e84c31a6;
+}
+.tech-icon12:hover{
+  background-color: #764abcac;
+}
+.tech-icon13:hover{
+  background-color: #e535aaa3;
+}
+.tech-icon14:hover{
+  background-color: #008fe2a6;
+}
 
 /* -------------------- Contact Page ----------------- */
 
