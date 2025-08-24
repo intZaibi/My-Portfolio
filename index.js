@@ -25,6 +25,14 @@ app.get('/', async (req, res) => {
 })
 
 
+app.get('/chat', async (req, res) => {
+  await db.query("select * from chatbot")
+  .then((data) => {
+    res.send(data)
+  })
+  .catch((error) => (console.log('fetching error: ', error)))
+})
+
 
 app.post('/chatbot', (req, res) => {
 
@@ -79,3 +87,4 @@ db.query("select * from form")
     app.listen(process.env.port || 4000, () => console.log("server connected!!!"));
     })
     .catch((err) => console.log("conecction failed. \n" + err));
+
