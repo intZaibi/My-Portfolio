@@ -133,7 +133,7 @@ export default function Projects() {
               className="card-content"
               style={{ padding: "2rem 2rem 1.5rem" }}
             >
-              <Project2 anime="true"/>
+              <Project2 Project="Ragger" tags={["Next.js", "RAG", "Agentic SDK", "Vector DB", "OpenAI"]} image={"/Ragger.png"} anime="true"/>
             </div>
           </div>
         </div>
@@ -143,3 +143,4 @@ export default function Projects() {
     </>
   );
 }
+
